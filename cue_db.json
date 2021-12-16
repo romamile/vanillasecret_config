@@ -1,0 +1,131 @@
+{
+  "listCue": [
+    {
+      "name": "Cue_1 item avocado",
+      "role": "romapres",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Avocado/glTF-Binary/Avocado.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": { "x": 35.353, "y": 1.0766, "z": -11.774 },
+                 "rot": {"x": 0, "y":1.57, "z":0},
+                 "scale": {"x": 10, "y":10, "z":10}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Cue_2 item video",
+      "role": "romapres",
+      "target": { "type": "video",
+                  "dest": "url",
+                  "src":  "https://www.youtube.com/watch?v=YE7VzlLtp-4"},
+      "action": { "type": "spawn_item",
+                  "pos": { "x": 35.353, "y": 1.0766, "z": -11.774 },
+                  "rot": {"x": 0, "y":-1.57, "z":0},
+                  "scale": {"x": 1.67, "y":1.67, "z":1.67},
+                  "volume":0.9,
+                  "distanceModel": "linear",
+                  "rolloffFactor":1,
+                  "refDistance":5,
+                  "maxDistance":10},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Cue_3 props",
+      "role": "romapres",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/2acc1a73-429b-4895-b766-b28c954a39b2.glb"},
+      "action": {"type": "spawn_prop",
+                 "rot": {"x": 0, "y":1.57, "z":0},
+                 "scale": {"x": 3, "y":3, "z":3}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Cue 2 move avocado",
+      "role": "romapres",
+      "target": { "type": "glb",
+                  "dest": "local",
+                  "src": "Cue_1 item avocado"},
+      "action": {"type": "move",
+                 "duration": 2000,
+                 "loop": true,
+                 "pos": { "x": 35.353, "y": 3.0766, "z": -11.774 },
+                 "rot": {"x": 0, "y":39.785, "z":0},
+                 "scale": {"x": 2, "y":2, "z":2}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Cue 4 waypoint Speak",
+      "role": "romapres",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#speak"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Cue 4 waypoint Back",
+      "role": "romapres",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#back"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+     {
+      "name": "Cue 5 avatar",
+      "role":"romapres",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/avatar1.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    
+    
+    
+    {
+      "name": "Cue_1 item avocado",
+      "role": "test",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Avocado/glTF-Binary/Avocado.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": { "x": 35.353, "y": 1.0766, "z": -11.774 },
+                 "rot": {"x": 0, "y":1.57, "z":0},
+                 "scale": {"x": 1.2, "y":1.2, "z":1.2}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Test_1_spawn_item_avocado",
+      "role": "test",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Avocado/glTF-Binary/Avocado.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 16.17, "y":1.48, "z":0.189},
+                 "rot": {"x": 0, "y":1.57, "z":0},
+                 "scale": {"x": 1.2, "y":1.2, "z":1.2}},
+      "trig": {"type": "button",
+               "time": 0}
+    },     
+    {
+      "name": "Add_light",
+      "role": "romamile",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://onboardxr.github.io/onboard_json/object/fishlight.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 0, "y":8, "z":-2},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+               "time": 0}
+    }
+      ]
+}

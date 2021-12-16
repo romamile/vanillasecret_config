@@ -1,0 +1,7 @@
+{
+  "romamile": {"name": "Roman", "role": "romamile"}, 
+  "romapres": {"name": "Roman", "role": "romapres"}, 
+  "showcase": {"name": "Showcase", "role": "showcase"}, 
+  "demo": {"name": "Demo", "role": "demo"}, 
+  "testUser": {"name": "testUser", "role": "test"}
+}
